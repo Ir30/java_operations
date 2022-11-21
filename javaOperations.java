@@ -39,6 +39,16 @@ class javaOperations{
             System.out.println("Prime");
         }
     }
+
+    static void check_even(int n){
+        if(n%2==0){
+            System.out.println("The number is even");
+        }
+        else{
+            System.out.println("The number is odd");
+
+        }
+    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -78,6 +88,12 @@ class javaOperations{
                 System.out.println("enter the number: ");
                 int p = sc.nextInt();
                 prime(p);
+            }
+
+            case 4:{
+                System.out.println("enter the number: ");
+                int p = sc.nextInt();
+                check_even(p);
             }
         }
 
