@@ -62,7 +62,7 @@ class javaOperations{
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+    
         System.out.println("Enter the choice: ");
         System.out.println("------------------------");
         System.out.println();
@@ -111,8 +111,12 @@ class javaOperations{
                 int p = sc.nextInt();
                 System.out.println(rev(p));
             }
+
+            case 6:{
+                break;
+            }
         }
 
-
+    
     }
 }
