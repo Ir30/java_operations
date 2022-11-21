@@ -49,6 +49,16 @@ class javaOperations{
 
         }
     }
+
+    static int rev(int n){
+        String s = String.valueOf(n);
+        String reversedStr = "";
+
+        for (int i = 0; i < s.length(); i++) {
+            reversedStr = s.charAt(i) + reversedStr;
+            }
+        return Integer.parseInt(reversedStr);
+    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -94,6 +104,12 @@ class javaOperations{
                 System.out.println("enter the number: ");
                 int p = sc.nextInt();
                 check_even(p);
+            }
+
+            case 5:{
+                System.out.println("enter the number: ");
+                int p = sc.nextInt();
+                System.out.println(rev(p));
             }
         }
 
