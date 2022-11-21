@@ -13,6 +13,19 @@ class javaOperations{
         return c;
         }
     }
+
+    static int smallest(int a,int b,int c){
+        if(a<b && a<c){
+            return a;
+        }
+        else if(b<c){
+            return b;
+        }
+        else{
+        return c;
+        }
+    }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -39,6 +52,13 @@ class javaOperations{
                 int n2 = sc.nextInt();
                 int n3 = sc.nextInt();
                 System.out.println("largest is:"+largest(n1,n2,n3));
+            }
+            case 2:{
+                System.out.println("enter three numbers: ");
+                int n3 = sc.nextInt();
+                int n4 = sc.nextInt();
+                int n5 = sc.nextInt();
+                System.out.println("smallest is:"+smallest(n3,n4,n5));
             }
         }
 
